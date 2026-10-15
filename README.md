@@ -2,29 +2,21 @@
 
 Bradley Beachoo
 
-This is my React Native final project. It's a recipe app with 12 food categories and 24 sample recipes. You can look through recipes, save favorites, and add your own with a photo. You can also edit or delete the recipes you add.
+My React Native final project. You can browse recipes, save favorites, and add, edit or delete your own recipes with photos. There are 12 food categories and 24 sample recipes.
 
-## Try it
+## Open the app
 
-[Open in Expo Snack](https://snack.expo.dev/@git/github.com/bradleybeachoo-collab/foodie-app) and select **Web**.
+[Open in Expo Snack](https://snack.expo.dev/@git/github.com/bradleybeachoo-collab/foodie-app), use **SDK 54**, and select **Web**.
 
-To import it yourself, open [Snack](https://snack.expo.dev/), choose **Import Git Repository**, and paste this link:
+You can also choose **Import Git Repository** in Snack and paste:
 
 https://github.com/bradleybeachoo-collab/foodie-app
 
-Use **Expo SDK 54** and wait for the packages to load.
-
-## Run it locally
-
-Download the project, open its folder in a terminal, and run:
+## Run locally
 
 ```sh
 npm install
 npm start
 ```
 
-Press **w** to open it in your browser.
-
-Recipes and favorites stay saved on your device. Keep uploaded photos around 1 MB or smaller. The sample photos need an internet connection, and calories are estimates.
-
-The main features were tested in the browser, and the Snack import works. Photo uploads were tested locally, but not inside Snack. It hasn't been tested on a physical phone yet.
+Press **w** for the browser version. Recipes save on your device. Use photos around 1 MB or smaller.
