@@ -25,6 +25,7 @@ function initialFields(recipe) {
 }
 
 function lines(value) {
+  // Seperate the lines and leave out any empty ones.
   return value.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
 }
 

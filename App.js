@@ -29,7 +29,7 @@ function Foodie() {
   const { width } = useWindowDimensions();
   const columns = width >= 650 ? 2 : 1;
 
-  // Keep recipes and favorites on this device between visits.
+  // Remeber recipes and favorites on this device between visits.
   async function loadRecipes() {
     if (loadInProgress.current) return;
     loadInProgress.current = true;
@@ -225,6 +225,7 @@ function Foodie() {
           ) : (
             <View style={styles.feed}>
               <View style={styles.intro}>
+                <Text style={styles.categoryLabel}>Bradley Beachoo's recipe book</Text>
                 <Text style={styles.heading}>What sounds good today?</Text>
                 <Text style={styles.muted}>Find a recipe, save a favorite, or add one of your own.</Text>
                 <View style={styles.search}>

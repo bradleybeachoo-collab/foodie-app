@@ -1,5 +1,7 @@
 # Foodie
 
+**Bradley Beachoo — React Native final project**
+
 Foodie is a React Native recipe app built with Expo SDK 54. Browse 24 sample recipes across 12 food categories, search by name, save favorites, and add recipes with your own photos. The code uses React state, simple components, and AsyncStorage.
 
 ## Run locally
@@ -26,7 +28,9 @@ The Expo terminal also offers Android and iOS options. A phone needs an Expo Go 
 3. Paste `https://github.com/bradleybeachoo-collab/foodie-app` and import the project.
 4. Select **Expo SDK 54**, allow the dependencies to load, and open the **Web** preview.
 
-Keep `App.js` at the repository root and preserve the `src` folder. Snack import has not yet been verified.
+Keep `App.js` at the repository root and preserve the `src` folder. The repository was successfully imported with **Import Git Repository** and runs in Snack's Web preview with **No errors**.
+
+[Open the imported app in Snack](https://snack.expo.dev/@git/github.com/bradleybeachoo-collab/foodie-app)
 
 ## Files to explore
 
@@ -54,4 +58,6 @@ Recipes and favorites are stored only on the current device or browser using Asy
 
 Use photos of about **1 MB or less**. The stored photo is limited to 1.5 million characters, and the complete saved collection is limited to **1.8 million characters**. Smaller photos leave room for more recipes. Sample photos load remotely from Unsplash and require an internet connection. Calorie values are estimates per serving.
 
-Local browser checks passed for category filtering, recipe details, Back navigation, favorite changes and persistence, photo upload, adding and editing recipes, and deletion with confirmation. A 42 KB JPEG remained visible after editing and reloading. Deleting its recipe also removed its favorite and remained deleted after another reload. Expo dependency checks and the web export passed. Native devices and Snack import are still unverified.
+Local browser checks passed for category filtering, recipe details, Back navigation, favorite changes and persistence, photo upload, adding and editing recipes, and deletion with confirmation. A 42 KB JPEG remained visible after editing and reloading. Deleting its recipe also removed its favorite and remained deleted after another reload. Expo dependency checks and the web export passed.
+
+Snack's repository import, Web launch, category filtering, recipe details, Back, and favorites were also checked. The embedded Snack photo chooser could not be controlled by the browser test tool, so its upload flow is unverified there. Native Android and iOS devices have not been tested.
