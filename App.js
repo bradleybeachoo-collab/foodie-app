@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import {
   ActivityIndicator, BackHandler, FlatList, Image, Modal, Pressable,
   ScrollView, StyleSheet, Text, TextInput, View, useWindowDimensions,
@@ -61,7 +61,7 @@ function Foodie() {
     setMessage('');
   }
 
-  function goBack() {
+  const goBack = useCallback(() => {
     if (saving) return;
     setDeleteRecipe(null);
     setMessage('');
@@ -72,7 +72,7 @@ function Foodie() {
       setRoute(HOME);
       setSearch('');
     }
-  }
+  }, [saving, history]);
 
   useEffect(() => {
     const listener = BackHandler.addEventListener('hardwareBackPress', () => {
@@ -87,7 +87,7 @@ function Foodie() {
       return false;
     });
     return () => listener.remove();
-  }, [history, route, saving, deleteRecipe]);
+  }, [history, route, goBack, deleteRecipe]);
 
   // Save before leaving the form so a storage error does not lose typed work.
   async function saveData(nextRecipes, nextFavorites) {
