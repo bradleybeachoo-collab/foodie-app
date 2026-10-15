@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Foodie",
+    "slug": "foodie-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Foodie to choose a photo for a recipe.",
+          "microphonePermission": false
+        }
+      ]
+    ]
+  }
+}
